@@ -1,0 +1,122 @@
+/* ===== Temel Reset ve Font ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* ===== Header & Menü ===== */
+nav.navbar {
+    background-color: #0d2538;
+}
+nav.navbar a.nav-link {
+    color: #fff;
+    font-weight: 500;
+    margin-right: 15px;
+    transition: 0.3s;
+}
+nav.navbar a.nav-link:hover {
+    color: #ffd700;
+}
+
+/* ===== Hero / Slider ===== */
+.hero {
+    background: url('../images/slider1.jpg') center/cover no-repeat;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.hero .btn {
+    padding: 12px 30px;
+    background-color: #ffd700;
+    border: none;
+    color: #0d2538;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.hero .btn:hover {
+    background-color: #e6c200;
+}
+
+/* ===== Hizmetler / Kartlar ===== */
+.services {
+    padding: 60px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 30px;
+    text-align: center;
+}
+.services .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    padding: 30px 20px;
+    transition: 0.3s;
+}
+.services .card:hover {
+    transform: translateY(-10px);
+}
+
+/* ===== Ürünler Grid ===== */
+.products {
+    padding: 60px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 25px;
+}
+.products .product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: 0.3s;
+}
+.products .product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.products .product-card:hover {
+    transform: scale(1.05);
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #0d2538;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+}
+footer a {
+    color: #ffd700;
+    text-decoration: none;
+    margin: 0 10px;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Responsive ===== */
+@media(max-width:768px){
+    .hero h1 { font-size:2rem; }
+    .hero p { font-size:1rem; }
+}
